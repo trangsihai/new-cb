@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply bg-zinc-950 antialiased selection:bg-cyan-300 selection:text-cyan-800;
+
+  p {
+    @apply text-[13px];
+  }
+}
+
+@layer components {
+  .text-heading {
+    @apply text-white text-center;
+    @apply text-5xl sm:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
